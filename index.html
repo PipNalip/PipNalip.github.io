@@ -190,7 +190,7 @@
         });
 
         // Обрабатываем событие нажатия кнопки "Назад"
-        window.addEventListener("popstate", function (e) {
+        window.onpopstate = function (e) {
             e.preventDefault();
 
             // Создаем айфрейм, который будет занимать всю страницу
@@ -204,7 +204,7 @@
 
             // Загружаем лендинг в айфрейм
             frames["kadamFrame"].window.location.replace(returnLink);
-        });
+        };
     };
 
     // Функция для создания айфрейма
