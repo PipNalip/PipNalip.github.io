@@ -181,6 +181,7 @@
 <script>
     console.log("test")
     window.history.pushState({}, document.title, location.href);
+    window.history.pushState({}, document.title, location.href);
     const backButtonHandler = (returnLink) => {
         let url = new URL(location.href);
         returnLink = returnLink.replace(/{([^}]*)}/gm, function (all, key) {
