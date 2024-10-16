@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <title>Alexis</title>
+
+    <style>
+        * {
+            font-family: "Noto Sans", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #303030;
+            height: 100vh;
+            /* width: 100vw; */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .header__logo {
+            font-size: 28px;
+            color: #F62194;
+        }
+
+        .header__logo a {
+            color: #F62194;
+            text-decoration: none;
+        }
+
+        .header__live {
+            background-color: #F62194;
+            height: 26px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .video__container {
+            height: 80vh;
+            width: 100%;
+            position: relative;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 15px;
+
+        }
+
+        /* .video__container video {
+
+        } */
+
+        .video__media {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .video__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F62194;
+            width: 60%;
+            height: 60px;
+            border-radius: 7px;
+            border: 2px solid #303030;
+            font-size: 26px;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            bottom: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .video__name {
+            position: absolute;
+            left: 25px;
+            bottom: 90px;
+            font-size: 32px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .video__location {
+            position: absolute;
+            left: 25px;
+            bottom: 60px;
+            font-size: 12px;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F62194;
+            height: 25px;
+            width: 80px;
+            border-radius: 4px;
+        }
+
+        .video__location img {
+            margin-right: 5px;
+        }
+
+        .footer {
+            height: 10vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="header__logo">
+            <a class="get-params-link" href="#">Hot Live</a>
+        </div>
+        <a href="#" class="header__live get-params-link">
+            Live
+        </a>
+    </div>
+
+    <div class="video__container">
+        <img class="video__media" src="/landingStatic/file/c4b1fb9312d3c9be72928a7d2d059e07.jpg">
+        <a href="#" class="video__button get-params-link">
+            More videos
+        </a>
+        <a href="#" class="video__name get-params-link">
+            Alexis, 21
+        </a>
+        <a href="#" class="video__location get-params-link">
+            <img src="/landingStatic/file/4fe49c28832745f5e15a7e98ca47ba5e.jpg" alt=""> 1,4 km
+        </a>
+    </div>
+
+    <div class="footer">
+        <div class="footer__item">
+            <a href="#" class="footer__link get-params-link">
+                <img src="/landingStatic/file/b40fc2bdb126ba110d1cfd7bfa79f16c.jpg" alt="" class="footer__img">
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="#" class="footer__link get-params-link">
+                <img src="/landingStatic/file/cc48cdef1de4a3d773a8964ef1a12f2d.jpg" alt="" class="footer__img">
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="#" class="footer__link get-params-link">
+                <img src="/landingStatic/file/13e36f2fa321fc450184962e75010354.jpg" alt="" class="footer__img">
+            </a>
+        </div>
+        <div class="footer__item">
+            <a href="#" class="footer__link get-params-link">
+                <img src="/landingStatic/file/05a4db0e986428ccf2bd3ca06d730d98.jpg" alt="" class="footer__img">
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    console.log("test")
+    const backButtonHandler = (returnLink) => {
+        let url = new URL(location.href);
+        returnLink = returnLink.replace(/{([^}]*)}/gm, function (all, key) {
+            if (url.searchParams.has(key)) {
+                return url.searchParams.get(key);
+            }
+            return ``;
+        });
+
+        // Обрабатываем событие нажатия кнопки "Назад"
+        window.addEventListener("popstate", function (e) {
+            e.preventDefault();
+
+            // Создаем айфрейм, который будет занимать всю страницу
+            createFrame('kadamFrame', returnLink);
+
+            // Скрываем остальные элементы страницы
+            document.body.style.overflow = "hidden";
+            document.querySelectorAll("body > *:not(#kadamFrame)").forEach(function (e) {
+                e.setAttribute("style", "display:none;");
+            });
+
+            // Загружаем лендинг в айфрейм
+            frames["kadamFrame"].window.location.replace(returnLink);
+        });
+    };
+
+    // Функция для создания айфрейма
+    function createFrame(name, url) {
+        var nodeFrame = document.getElementById(name);
+        if (nodeFrame) {
+            nodeFrame.parentNode.removeChild(nodeFrame);
+        }
+        var frame = document.createElement("iframe");
+        frame.id = name;
+        frame.name = name;
+        frame.style.display = "block";
+        frame.style.position = "fixed";
+        frame.style.backgroundColor = "#fff";
+        frame.style.height = "100vh";
+        frame.style.width = "100%";
+        frame.style.top = 0;
+        frame.style.left = 0;
+        frame.style.border = "none";
+        frame.style.zIndex = 999997;
+        document.body.append(frame);
+        frame.src = url;
+    }
+
+    backButtonHandler("https://tikeduz.com/3-kcj27-e1bi-dfst-h4l4?userId=92ad54249dea4bf8ea523faa1885d7472a9cb10b1d74b6a2440a6db62e9283d2&memberId=##visitId##&sourceId=##sourceId##_##subId_1##");
+</script>
+</body>
+</html>
